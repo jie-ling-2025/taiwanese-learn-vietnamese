@@ -1,0 +1,24 @@
+{
+  "name": "taiwanese-learn-vietnamese",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "build:single": "vite build --mode singlefile",
+    "protect": "node scripts/protect-site.mjs",
+    "build:protected": "npm run build:single && npm run protect"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "vite": "^7.0.0"
+  },
+  "devDependencies": {
+    "pagecrypt": "^7.1.0",
+    "vite-plugin-singlefile": "^2.3.3"
+  }
+}
